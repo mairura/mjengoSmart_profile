@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../img/svg/mjengo.svg";
+import logo from "../../public/img/svg/mjengo.svg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ type Props = {
 
 export default function Guest({ children, title, subtitle, linktext, link }: Props) {
     return (
-        <div className="bg-login-bg  h-full w-full bg-cover bg-center bg-no-repeat min-h-screen">
+        <div className="bg-login-bg h-full w-full bg-cover bg-center bg-no-repeat min-h-screen">
             <div className="container">
             <div className="flex justify-start mt-6">
                 <Link

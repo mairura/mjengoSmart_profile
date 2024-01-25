@@ -14,15 +14,15 @@ import {
     FaList
 } from "react-icons/fa";
 
-import carousel1 from '../img/carousel1.png'
-import carousel2 from "../img/carousel2.png";
-import carousel3 from "../img/carousel3.png";
-import carousel4 from "../img/carousel4.jpg";
-import carousel5 from "../img/carousel5.png";
-import carousel6 from "../img/carousel6.png";
-import carousel7 from "../img/carousel7.png";
-import carousel8 from "../img/carousel8.png";
-import carousel9 from "../img/carousel9.png";
+import carousel1 from '../public/img/carousel1.png'
+import carousel2 from "../public/img/carousel2.png";
+import carousel3 from "../public/img/carousel3.png";
+import carousel4 from "../public/img/carousel4.jpg";
+import carousel5 from "../public/img/carousel5.png";
+import carousel6 from "../public/img/carousel6.png";
+import carousel7 from "../public/img/carousel7.png";
+import carousel8 from "../public/img/carousel8.png";
+import carousel9 from "../public/img/carousel9.png";
 import { IconType } from "react-icons";
 
 interface NavigationItem {
