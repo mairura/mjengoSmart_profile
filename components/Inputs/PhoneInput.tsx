@@ -59,7 +59,7 @@ export function PhoneInput({
                 defaultValue={defaultValue}
                 id={name}
                 disabled={isDisabled}
-                className={`shadow-sm focus:ring-red-500 focus:border-red-500 block w-full sm:text-sm border-gray-300 px-4 rounded rounded-l-none mb-2 ${
+                className={`shadow-sm focus:border-2 focus:outline-none focus:ring-red-500 focus:border-red-500 block w-full h-[38px] sm:text-sm border border-gray-300 px-4 rounded rounded-l-none mb-2 placeholder-gray-600 ${
                     error && "border-red-300"
                 } ${className}`}
                 ref={input}
@@ -127,7 +127,7 @@ export function SelectCountryCodeInput({
                 required={required}
                 isDisabled={isDisabled}
                 placeholder="Search"
-                className={`w-[10rem] shadow-sm focus:ring-0 focus:border-gray-300 sm:text-sm border-gray-300 px-2 rounded rounded-r-none mb-2 ${
+                className={`w-[10rem] shadow-sm focus:ring-0 focus:outline-none focus:border-2 focus:border-gray-300 sm:text-sm border-gray-300 px-2 rounded rounded-r-none mb-2 ${
                     error && "border-red-300"
                 } ${className}`}
             />

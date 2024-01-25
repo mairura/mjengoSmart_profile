@@ -9,11 +9,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      // backgroundImage: {
-      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-      //   "gradient-conic":
-      //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      // },
       screens: {
         xs: "320px",
         // => @media (min-width: 320px) { ... }
@@ -33,11 +28,10 @@ const config: Config = {
         "2xl": "1536px",
         // => @media (min-width: 1536px) { ... }
       },
-
       backgroundImage: {
-          "stats-bg": "url('/resources/img/stats-bg.png')",
-          "projects-bg": "url('/resources/img/projects-page-background.png')",
-          "login-bg": "url('/public/img/login-bg.png')",
+          "stats-bg": "url('/img/stats-bg.png')",
+          "projects-bg": "url('/img/projects-page-background.png')",
+          "login-bg": "url('/img/login-bg.png')",
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
@@ -48,6 +42,9 @@ const config: Config = {
           500: "#B7213D",
           600: "#A81833",
         },
+      },
+      placeholderColor: {
+        'custom': 'gray-400', 
       },
     },
   },

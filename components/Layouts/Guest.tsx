@@ -13,9 +13,9 @@ type Props = {
 
 export default function Guest({ children, title, subtitle, linktext, link }: Props) {
     return (
-        <div className="bg-login-bg h-full w-full bg-cover bg-center bg-no-repeat min-h-screen">
+        <div className="bg-login-bg h-screen w-full bg-cover bg-center bg-no-repeat min-h-screen">
             <div className="container">
-            <div className="flex justify-start mt-6">
+            <div className="flex justify-start pt-6">
                 <Link
                     href="/"
                     className="hover:underline text-gray-700 flex items-center focus:outline-none focus:shadow-outline"

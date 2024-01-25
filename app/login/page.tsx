@@ -3,7 +3,7 @@ import Login from '@/components/Auth/Login'
 const Page = () => {
   return (
     <div>
-        <Login status="some status" canResetPassword={true} />
+        <Login status="Active" canResetPassword={true} />
 
     </div>
   )

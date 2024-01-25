@@ -1,7 +1,7 @@
 import { Dialog, Transition } from "@headlessui/react";
 import React, { Fragment } from "react";
 // import { XIcon } from "@heroicons/react/outline";
-import Logo from "../../../img/logo-dashboard.png";
+import Logo from "../../../public/img/logo-dashboard.png";
 import Image from "next/image";
 import { navigation } from "@/Shared/data";
 import { classNames, hasPermission } from "@/Shared/helpers";
