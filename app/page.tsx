@@ -1,6 +1,6 @@
 "use client"
 
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 // import { MenuAlt2Icon } from "@heroicons/react/outline";
 // import MobileNavigation from "@/Components/Navbar/Mobile";
@@ -10,6 +10,8 @@ import { HiOutlineLogout, HiOutlineUsers } from "react-icons/hi";
 import TopNav from "@/components/Navbar/TopNav";
 import DesktopNavigation from "@/components/Navbar/Desktop";
 import MobileNavigation from "@/components/Navbar/Mobile";
+import { Inter } from "next/font/google";
+
 // import TopNav from "@/Components/Navbar/TopNav";
 
 type Props = {
@@ -23,19 +25,19 @@ function classNames(...classes: any[]) {
 }
 
 export default function Dashboard({ auth, header, children }: Props) {
-    const [sidebarOpen, setSidebarOpen] = useState(false);
+    // const [sidebarOpen, setSidebarOpen] = useState(false);
 
     return (
         <>
-            <TopNav auth={auth} user={auth?.user} />
+            {/* <TopNav auth={auth} user={auth?.user} /> */}
             <div className="flex">
-                <MobileNavigation
+                {/* <MobileNavigation
                     user={auth?.user}
-                    sidebarOpen={sidebarOpen}
-                    setSidebarOpen={setSidebarOpen}
-                />
+                    sidebarOpen={false}
+                    setSidebarOpen={() => {}}
+                /> */}
 
-                <DesktopNavigation user={auth?.user} />
+                {/* <DesktopNavigation user={auth?.user} /> */}
 
                 <div className="flex flex-1 overscroll-contain w-full">
                     <main className="w-full">

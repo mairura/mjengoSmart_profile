@@ -9,11 +9,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      // backgroundImage: {
+      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      //   "gradient-conic":
+      //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      // },
       screens: {
         xs: "320px",
         // => @media (min-width: 320px) { ... }
@@ -34,11 +34,11 @@ const config: Config = {
         // => @media (min-width: 1536px) { ... }
       },
 
-      // backgroundImage: {
-      //     "stats-bg": "url('/resources/img/stats-bg.png')",
-      //     "projects-bg": "url('/resources/img/projects-page-background.png')",
-      //     "login-bg": "url('/resources/img/login-bg.png')",
-      // },
+      backgroundImage: {
+          "stats-bg": "url('/resources/img/stats-bg.png')",
+          "projects-bg": "url('/resources/img/projects-page-background.png')",
+          "login-bg": "url('/public/img/login-bg.png')",
+      },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
