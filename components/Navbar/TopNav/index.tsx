@@ -1,4 +1,4 @@
-import Logo from "../../../img/svg/mjengo.svg";
+import Logo from "../../../public/img/svg/mjengo.svg";
 import { Menu, Transition } from "@headlessui/react";
 // import { MenuAlt2Icon } from "@heroicons/react/outline";
 // import { XIcon } from "@heroicons/react/outline";

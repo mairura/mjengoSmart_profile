@@ -1,11 +1,11 @@
 "use client"
 
 import { useEffect, useState } from "react";
-import Spinner from "./spinner";
+import Spinner from "./Spinner";
 import Guest from "../Layouts/Guest";
-import { Button } from "..";
 import { Checkbox, Input, Label, PasswordInput } from "../Inputs";
 import Link from "next/link";
+import Button from "../Commons/Button";
 
 type Props = {
   status: string;
@@ -99,7 +99,7 @@ export default function Login({ status, canResetPassword }: Props) {
             type="text"
             name="email"
             value={formData.email}
-            className="mt-1 block w-full"
+            className={`mt-1 block w-full`}
             autoComplete="username"
             isFocused={true}
             handleChange={onHandleChange}

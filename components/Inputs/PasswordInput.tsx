@@ -42,7 +42,7 @@ export function PasswordInput({
           type={showPassword ? 'text' : 'password'}
           name={name}
           value={value}
-          className={`shadow-sm focus:ring-red-500 focus:border-red-500 block w-full sm:text-sm border-gray-300 px-4 rounded mb-2 ${
+          className={`shadow-sm focus:outline-none focus:border-2 focus:ring-red-500 focus:border-red-500 block h-[38px] w-full sm:text-sm border border-gray-300 px-4 rounded mb-2 placeholder-gray-600 ${
             error && 'border-red-300'
           } ${className}`}
           ref={inputRef}

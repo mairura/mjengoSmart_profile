@@ -1,8 +1,8 @@
 "use client"
 
 import { useEffect, useState } from "react";
-import Spinner from "./spinner";
-import TermsModal from "../TermsModal";
+import Spinner from "./Spinner";
+import TermsModal from "../Commons/TermsModal";
 import {
   Input,
   Label,
@@ -10,10 +10,10 @@ import {
   PhoneInput,
   SelectCountryCodeInput,
 } from "../Inputs";
-import { Button } from "..";
 import Guest from "../Layouts/Guest";
 import { useRouter } from "next/navigation";
 import Head from "next/head";
+import Button from "../Commons/Button";
 
 export default function Register() {
   const router = useRouter();

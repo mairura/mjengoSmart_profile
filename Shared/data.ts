@@ -42,7 +42,7 @@ export const navigation: NavigationItem[] = [
     },
     {
         name: "Projects",
-        href: "/projects",
+        href: "/dashboard/projects",
         icon: FaBuilding,
         permission: "view-projects",
     },
