@@ -9,24 +9,16 @@ import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
- const metadata: Metadata = {
+const metadata: Metadata = {
   title: "MjengoSmart",
   description: "Your reliable construction partner"
 };
-
+// you will auth and add its type on the below
 export default function RootLayout({
-  children,
-  auth
+  children
 }: Readonly<{
   children: React.ReactNode;
-  auth: any;
 }>) {
-  type Props = {
-    auth: any;
-    header: any;
-    children: React.ReactNode;
-  };
-
   // const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <html lang="en">
