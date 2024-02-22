@@ -1,3 +1,4 @@
+'use client'
 import Logo from "../../../public/img/svg/mjengo.svg";
 import { Menu, Transition } from "@headlessui/react";
 // import { MenuAlt2Icon } from "@heroicons/react/outline";
@@ -11,6 +12,7 @@ import Link from "next/link";
 import LatestNotifications from "@/components/Notifications/LatestNotifications";
 import { XMarkIcon } from "@heroicons/react/16/solid";
 import { navigation } from "@/Shared/data";
+import { usePathname} from "next/navigation";
 
 type Props = {
   auth: any;
@@ -20,6 +22,8 @@ type Props = {
 function TopNav({ auth, user }: Props) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const permissions = user?.user_permissions || [];
+  const route = usePathname();
+  const currentRoute = route;
 
   useEffect(() => {
     if (sidebarOpen) {
@@ -70,38 +74,31 @@ function TopNav({ auth, user }: Props) {
                   onClick={() => setSidebarOpen(false)}
                 >
                   <span className="sr-only">Close sidebar</span>
-                  <XMarkIcon
-                    className="h-6 w-6 text-red"
-                    aria-hidden="true"
-                  />
+                  <XMarkIcon className="h-6 w-6 text-red" aria-hidden="true" />
                 </button>
               </div>
               <div className="flex-shrink-0 flex items-center px-4">
-                <Image
-                  className="h-12"
-                  src={Logo}
-                  alt="Workflow"
-                />
+                <Image className="h-12" src={Logo} alt="Workflow" />
               </div>
               <div className="mt-5 flex-1 h-0 overflow-y-auto">
                 <nav className="px-2 space-y-1">
                   {navigation.map((item: any) => (
                     <React.Fragment key={item.name}>
                       {/* {hasPermission(permissions, item.permission) ? ( */}
-                        <Link
-                          href={item.href}
-                          onClick={() => setSidebarOpen(false)}
-                          className={classNames(
-                            window.location.href.startsWith(item.href)
-                              ? "bg-red-500 text-white"
-                              : "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
-                            "group flex items-center px-2 py-2 text-sm font-medium rounded-md"
-                          )}
-                        >
-                          <item.icon className="mr-3" />
+                      <Link
+                        href={item.href}
+                        onClick={() => setSidebarOpen(false)}
+                        className={classNames(
+                          currentRoute.startsWith(item.href)
+                            ? "bg-red-500 text-white"
+                            : "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
+                          "group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                        )}
+                      >
+                        <item.icon className="mr-3" />
 
-                          {item.name}
-                        </Link>
+                        {item.name}
+                      </Link>
                       {/* ) : null} */}
                     </React.Fragment>
                   ))}
@@ -119,7 +116,7 @@ function TopNav({ auth, user }: Props) {
         onClick={() => setSidebarOpen(true)}
       >
         <span className="sr-only">Open sidebar</span>
-        <HiOutlineMenuAlt2 className="h-6 w-6" aria-hidden="true" /> 
+        <HiOutlineMenuAlt2 className="h-6 w-6" aria-hidden="true" />
         {/* Menu Here */}
       </button>
 
@@ -146,7 +143,6 @@ function TopNav({ auth, user }: Props) {
             src={auth.user.avatar_url}
             alt="avatar"
           />
-          
         ) : (
           <BiUserCircle className="h-6 w-6 sm:h-8 sm:w-8 text-black" />
         )}

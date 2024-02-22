@@ -57,7 +57,7 @@ export default function Login({ status, canResetPassword }: Props) {
       }
     } catch (error) {
       console.error('Error submitting form:', error);
-      setError('An unexpected error occurred');
+      setError('An unexpected error occurred, please try again.');
     } finally {
       setProcessing(false);
     }
