@@ -83,7 +83,7 @@ export const navigation: NavigationItem[] = [
   },
   {
     name: "Approvals",
-    href: "/admin.approvals.index",
+    href: "/approvals",
     icon: FaList,
     permission: "view-users"
   },
@@ -125,7 +125,7 @@ export const supplier_navigation = [
 export const non_admin_navigation = [
   {
     name: "Wallet",
-    href: "/wallets.user.showByUser",
+    href: "/wallet",
     icon: FaDollarSign,
     permission: "view-user-wallets"
   }
