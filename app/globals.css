@@ -10,24 +10,24 @@
 
 @layer components {
   #app {
-      @apply flex flex-col min-h-full w-full;
+    @apply flex flex-col min-h-full w-full;
   }
 
   body {
-      @apply bg-[#FDFDFD];
+    @apply bg-[#FDFDFD];
   }
 
   .container {
-      @apply max-w-[1413px] mx-auto px-4 2xl:px-0;
+    @apply max-w-[1413px] mx-auto px-4 2xl:px-0;
   }
 
   .scrollbar::-webkit-scrollbar {
-      @apply w-[4.5px] h-0.5;
+    @apply w-[4.5px] h-0.5;
   }
 
   .hideScrollbar::-webkit-scrollbar {
-      width: 0;
-      background-color: transparent;
+    width: 0;
+    background-color: transparent;
   }
 }
 
@@ -44,16 +44,15 @@
   scrollbar-color: #999999 #f0f0f0;
 
   &::-webkit-scrollbar {
-      width: 6px;
+    width: 6px;
   }
 
   &::-webkit-scrollbar-thumb {
-      background-color: #999999;
-      border-radius: 30px;
+    background-color: #999999;
+    border-radius: 30px;
   }
 
   &::-webkit-scrollbar-track {
-      background-color: #f0f0f0;
+    background-color: #f0f0f0;
   }
 }
-
