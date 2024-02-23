@@ -4,8 +4,8 @@ const Dashboard = () => {
   return (
     <div className="flex flex-1 overscroll-contain w-full h-full pl-4">
       <main className="">
-        <div className="flex items-center justify-center  md:px-6 w-full">
-          <h1 className="text-4xl font-bold">MjengoSmart</h1>
+        <div className="flex flex-col items-center justify-center md:px-6 w-full">
+          <h1 className="text-4xl font-bold">MjengoSmart Dashboard Page</h1>
           <p>Your reliable construction partner</p>
         </div>
       </main>
